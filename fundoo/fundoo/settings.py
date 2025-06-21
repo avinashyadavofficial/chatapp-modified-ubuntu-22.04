@@ -11,11 +11,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'q484cut7o3)27rt(1qfke15g+dhy-i*cwj194ryfjxk3g)+2gu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # AUTH_USER_MODEL = "fundooapp.user"
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['10.0.4.34', 'localhost']
 
 
 # Email verification
@@ -103,13 +103,14 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME', ''),
-        'USER': os.getenv('DB_USER', ''),
-        'PASSWORD': os.getenv('DB_PASSWORD', ''),
-        'HOST': os.getenv('DB_HOST', ''),
-        'PORT': os.getenv('DB_PORT', '3306'),
+        'NAME': 'chatapp',
+        'USER': 'chatapp',
+        'PASSWORD': 'J.YqwX83zz',
+        'HOST': '10.0.4.6',  
+        'PORT': '3306',
     }
 }
+
 
 
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
