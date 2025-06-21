@@ -11,11 +11,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'q484cut7o3)27rt(1qfke15g+dhy-i*cwj194ryfjxk3g)+2gu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # AUTH_USER_MODEL = "fundooapp.user"
 
-ALLOWED_HOSTS = ['10.0.4.34', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Email verification
